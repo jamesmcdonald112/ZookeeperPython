@@ -10,4 +10,5 @@ programming_language: Python
 environment: unittest
 content:
   - Zookeeper with Python
+  - Topics
 mode: Study
