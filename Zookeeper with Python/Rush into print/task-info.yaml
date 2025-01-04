@@ -1,0 +1,58 @@
+type: edu
+custom_name: Rush into print.
+files:
+  - name: test/__init__.py
+    visible: false
+    learner_created: false
+  - name: test/tests.py
+    visible: false
+    text: |
+      from hstest.stage_test import StageTest
+      from hstest.test_case import TestCase
+      from hstest.check_result import CheckResult
+      
+      CheckResult.correct = lambda: CheckResult(True, '')
+      CheckResult.wrong = lambda feedback: CheckResult(False, feedback)
+      
+      
+      class Zookeeper(StageTest):
+          def generate(self):
+              return [TestCase(attach=
+                               ["i love animals",
+                                "let's check on the animals",
+                                "the deer looks fine",
+                                "the bat looks happy",
+                                "the lion looks healthy"])]
+      
+          def check(self, reply, attach):
+              reply = reply.replace('’', "'").strip().lower()
+              reply = list(filter(None, reply.splitlines()))
+              if len(reply) != 5:
+                  return CheckResult.wrong("Your program should print 5 lines")
+              for j, (answer_line, reply_line) in enumerate(zip(attach, reply)):
+                  if answer_line not in reply_line:
+                      return CheckResult.wrong("Your output should be like in the example!\n"
+                                               f"The '{answer_line.capitalize()}' string should be on the line {j+1}")
+              return CheckResult.correct()
+      
+      
+      if __name__ == '__main__':
+          Zookeeper('zookeeper.zookeeper').run_tests()
+    learner_created: false
+  - name: zookeeper/zookeeper.py
+    visible: true
+    learner_created: false
+  - name: tests.py
+    visible: false
+    text: |
+      from test.tests import Zookeeper
+      
+      if __name__ == '__main__':
+          Zookeeper('zookeeper.zookeeper').run_tests()
+    learner_created: false
+feedback_link: https://hyperskill.org/projects/98/stages/539/implement#comment
+status: Solved
+feedback:
+  message: Congratulations!
+  time: "Sat, 04 Jan 2025 01:00:28 UTC"
+record: 1
