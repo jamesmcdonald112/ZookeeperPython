@@ -1,0 +1,17 @@
+type: code
+files:
+  - name: main.py
+    visible: true
+    text: |-
+      cost_1 = 500
+      cost_2 = 400
+      2tal_cost = 900
+      print(2tal_cost)
+    learner_created: false
+feedback_link: https://hyperskill.org/learn/step/47545#comment
+status: Solved
+feedback:
+  message: <html>Correct solution</html>
+  time: "Sat, 04 Jan 2025 14:43:04 UTC"
+record: -1
+submission_language: python3

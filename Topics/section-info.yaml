@@ -1,3 +1,9 @@
 content:
   - Basic data types
   - Quotes and multi-line strings
+  - Variables
+  - Integer arithmetic  basic operations
+  - Taking user's input
+  - Invoking functions
+  - List
+  - Indexes

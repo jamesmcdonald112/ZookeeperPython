@@ -50,7 +50,7 @@ files:
       if __name__ == '__main__':
           Zookeeper('zookeeper.zookeeper').run_tests()
     learner_created: false
-feedback_link: https://hyperskill.org/projects/98/stages/539/implement#comment
+feedback_link: https://hyperskill.org/learn/step/8815#comment
 status: Solved
 feedback:
   message: Congratulations!

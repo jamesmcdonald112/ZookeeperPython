@@ -1,0 +1,18 @@
+type: code
+files:
+  - name: main.py
+    visible: true
+    text: |-
+      # Imput user's name
+      
+      # Input user's profession
+      
+      # Print the message
+    learner_created: false
+feedback_link: https://hyperskill.org/learn/step/47678#comment
+status: Solved
+feedback:
+  message: <html>Correct solution</html>
+  time: "Sat, 04 Jan 2025 19:10:11 UTC"
+record: -1
+submission_language: python3
