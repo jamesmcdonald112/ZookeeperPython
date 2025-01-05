@@ -1,9 +1,9 @@
 type: choice
 is_multiple_choice: false
 options:
-  - text: 2
-  - text: 3
   - text: 4
+  - text: 3
+  - text: 2
   - text: 5
 files:
   - name: main.py

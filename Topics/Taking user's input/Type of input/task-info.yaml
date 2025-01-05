@@ -1,10 +1,10 @@
 type: choice
 is_multiple_choice: false
 options:
+  - text: integer
+  - text: date
   - text: string
   - text: number
-  - text: date
-  - text: integer
 files:
   - name: main.py
     visible: true

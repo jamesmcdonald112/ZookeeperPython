@@ -123,9 +123,11 @@ It looks like we will soon have more rabbits!"""
 animals = [camel, lion, deer, goose, bat, rabbit]
 
 # write your code here
-animal_number_choice = int(input("Please enter the number of the habitat you would like to view: "))
-print(animals[animal_number_choice])
-print("""
----
-You've reached the end of the program. To check another habitat, please restart the watcher.
-""")
+while True:
+    user_choice = input("Please enter the number of the habitat you would like to view: ")
+    if user_choice == "exit":
+        print("See you later!")
+        break
+    else:
+        print(animals[int(user_choice)])
+

@@ -1,0 +1,19 @@
+type: code
+custom_name: "Comparing heights: Andy and Ben"
+files:
+  - name: main.py
+    visible: true
+    text: "# To get input from the user, use the input function, which returns the entered\
+    \ value as a string.\n# To convert this string to an integer, use the built-in\
+    \ int function.\n\nandy_height = int(input())\nben_height = int(input())\n\n#\
+    \ Now, write a comparison operation to check if Andy's height is greater than\
+    \ Ben's. \n# Remember, the comparison operator should return a boolean value:\
+    \ True or False.\n\n# Finally, print the result of the comparison operation."
+    learner_created: false
+feedback_link: https://hyperskill.org/learn/step/41441#comment
+status: Solved
+feedback:
+  message: <html>Correct solution</html>
+  time: "Sun, 05 Jan 2025 15:46:59 UTC"
+record: -1
+submission_language: python3
